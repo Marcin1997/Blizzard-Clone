@@ -1,0 +1,567 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+  --ff-primary: "Helvetica", sans-seriff;
+  --ff-secondary: "Source Code Pro", monospace;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-nav-side-bg: #151A23;
+  --clr-nav-items: #009AE4;
+  --clr-navigation: #0B0D12;
+  --clr-light-nav: #B6B7B8;
+  --clr-bg-toggle: #1c202bec;
+  --clr-bg: #002650;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  --clr-nav: rgb(107, 208, 255) ;
+  --clr-arrow-down: #55565A;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0, 0.25), 
+  0.125em 0.125em 0;
+}
+
+
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE */
+
+.desktop-collapse-games {
+    display: none;
+}
+
+
+@media (min-width: 761px){
+    .change-games-list-desktop .line-wide {
+    height: 0.5px;
+    width: 100%;
+    background-color: #55565a9a;
+   top: 0px;
+} /*change*/
+.change-games-list-desktop .desktop-collapse-games {
+    width: 100%;
+    background: var(--clr-bg-toggle);
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    animation: moveDesktop 1s ease-in;
+    position: absolute;
+    z-index: 10000;
+}
+
+.desktop-collapse-games {
+    text-shadow: 0.25em 0.25em 0.75em rgba(0,0,0, 0.25);
+}
+.change-games-list-desktop .game-list-desktop {
+    display: flex;
+    width: 80%;
+    color: var(--clr-light-nav);
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-evenly;
+    
+}
+
+.change-games-list-desktop .game-list-desktop .game {
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 10px;
+   margin-right: 5%;
+   height: fit-content;
+   opacity: 0;
+}
+
+.change-games-list-desktop .game-list-desktop .game a {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.change-games-list-desktop .game-diablo-immortal {
+    margin-top: 30px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 12px;
+   margin-right: 5%;
+    margin-right: 0px !important;
+    
+}
+.change-games-list-desktop .game-diablo-immortal img {
+height: 50px;
+}
+
+.change-games-list-desktop .desktop-collapse-games .game img {
+  height: 50px;
+  max-width: 10000px;
+}
+
+
+
+.change-games-list-desktop .game-list-desktop-2 {
+    display: flex;
+   top: 190px;
+    width: 40%;
+    position: absolute;
+    justify-content: space-evenly;
+    
+}
+
+.change-games-list-desktop .game-list-desktop-2 .game {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 10px;
+   margin-right: 5%;
+   color: var(--clr-light-nav);
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-evenly;
+    height: fit-content;
+    opacity: 0;
+    
+}
+
+.change-games-list-desktop .games-desktop:active .change-games-list-desktop {
+      transition:  0.3s ease-in;
+}
+.change-games-list-desktop .arrow-down-games {
+    transform: rotate(180deg);
+}
+
+/* FINISH ADDING A TRANSITION ON 13.09 ASAP */
+
+.change-games-list-desktop .game-list-desktop-2 .game a {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.change-games-list-desktop .arcade-game {
+    margin-right: 0px;
+}
+
+
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(1) {
+    animation: moveBanner 0.09s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(2) {
+    animation: moveBanner 0.1s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(3) {
+    animation: moveBanner 0.15s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(4) {
+    animation: moveBanner 0.2s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(5) {
+    animation: moveBanner 0.25s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(6) {
+    animation: moveBanner 0.3s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(7) {
+    animation: moveBanner 0.35s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(8) {
+    animation: moveBanner 0.4s ease-in forwards;
+}
+.change-games-list-desktop .game-list-desktop .game:nth-of-type(9) {
+    animation: moveBanner 0.45s ease-in forwards;
+}
+
+
+
+
+.change-games-list-desktop .game-list-desktop-2 .game:nth-of-type(1){
+    animation: moveBanner 0.05s ease-in forwards;
+    animation-delay: 0.45s;
+   
+}
+.change-games-list-desktop .game-list-desktop-2 .game:nth-of-type(2){
+    animation: moveBanner 0.1s ease-in forwards;
+    animation-delay: 0.50s;
+}
+.change-games-list-desktop .game-list-desktop-2 .game:nth-of-type(3){
+    animation: moveBanner 0.15s ease-in forwards;
+    animation-delay: 0.55s;
+}
+.change-games-list-desktop .game-list-desktop-2 .game:nth-of-type(4){
+    animation: moveBanner 0.20s ease-in forwards;
+    animation-delay: 0.60s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes moveBanner {
+    0% {
+        
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+
+@keyframes moveBanner2 {
+    0% {
+        display: none;
+        transform: translateY(-5rem) rotateY(-20deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes moveBannerOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.change-games-list-desktop .line-wide-moved {
+    position: absolute;
+    top: 350px;
+}
+
+.change-games-list-desktop .desktop-games-bottom-panel {
+    display: flex ;
+    position: absolute;
+    top: 315px;
+    color: var(--clr-light-nav);
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    text-shadow: 0.25em 0.25em 0.75em rgba(0,0,0, 0.25);
+    animation: moveBanner2 0.3s forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+    
+}
+
+.change-games-list-desktop .desktop-games-bottom-panel .far {
+    margin-right: 7px;
+}
+.change-games-list-desktop .desktop-games-bottom-panel .fas {
+    margin-right: 7px;
+}
+.change-games-list-desktop .desktop-games-bottom-panel .battle-net-logo-desktop {
+    margin-right: 7px;
+}
+.change-games-list-desktop .desktop-games-icons {
+    font-size: 18px;
+    color: #009AE4;
+}
+
+.change-games-list-desktop .battle-net-logo-desktop {
+    height: 18px !important;
+}
+
+.change-games-list-desktop .desktop-bottom-panel-items {
+ margin-right: 45px;
+ display: flex;
+ align-items: center;
+}
+
+.change-games-list-desktop .desktop-collapse-games a {
+    color: var(--clr-light-nav);
+}
+.change-games-list-desktop .desktop-collapse-games a:hover {
+    color: white;
+}
+
+/* COLOR CHANGES ONCE .CHANGE IS APPLIED TO THE SHOP/NEWS */
+
+
+
+.change-games-list-desktop .change-games-list-desktop .esports a{
+    color: var(--clr-arrow-down);
+    
+}
+.change-games-list-desktop .change-games-list-desktop .esports a:hover{
+    color: white;
+    
+}
+.change-games-list-desktop .change-games-list-desktop .shop a{
+    color: var(--clr-arrow-down);
+}
+.change-games-list-desktop .change-games-list-desktop .shop a:hover{
+    transition: ease-in 0.2s;
+    color: white;
+}
+.change-games-list-desktop .change-games-list-desktop .news a{
+    color: var(--clr-arrow-down);
+}
+.change-games-list-desktop .change-games-list-desktop .news a:hover{
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.change-games-list-desktop .change-games-list-desktop .menu-item .menu-link {
+    color: var(--clr-arrow-down);
+}
+.change-games-list-desktop .change-games-list-desktop .menu-item .menu-link:hover {
+    color: white;
+    transition: ease-in 0.2s;
+}
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* GAMES COLLAPSIBLE MENU ON DESKTOP SIZE 
+END
+END
+END
+*/
+
+
+
+
+
+/* ESPORTS COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* ESPORTS COLLAPSIBLE MENU ON DESKTOP SIZE */
+/* ESPORTS COLLAPSIBLE MENU ON DESKTOP SIZE */
+
+
+
+.change-esports-list-desktop .desktop-collapse-esports {
+        width: 100%;
+        background: var(--clr-bg-toggle);
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        animation: moveDesktop 1s ease-in;
+        top: 58px;
+        position: absolute;
+        z-index: 10000;
+    }
+.desktop-collapse-esports {
+        width: 100%;
+        background: #1c202bd3;
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        animation: moveDesktop 1s ease-in;
+        display: none;
+    }
+.desktop-collapse-games .line-wide {
+        width: 100%;
+        position: absolute;
+    
+    }
+.desktop-collapse-esports .line-wide {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+    }
+
+.desktop-collapse-esports a:hover {
+    color: white !important;
+}
+.change-esports-list-desktop .desktop-collapse-esports .game img{
+        height: 130px;
+    }
+.change-esports-list-desktop .desktop-collapse-esports .game-wow {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 40px;
+        position: relative;
+        top: 54px;
+    }
+.change-esports-list-desktop .desktop-collapse-esports .game-wow a {
+        margin-top: 20px;
+        color: var(--clr-light-nav);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
+    }
+
+.change-esports-list-desktop .desktop-games-bottom-panel-esports {
+    display: flex ;
+    position: absolute;
+    top: 315px;
+    color: var(--clr-light-nav);
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    text-shadow: 0.25em 0.25em 0.75em rgba(0,0,0, 0.25);
+    animation: moveBanner2 0.3s forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+.change-esports-list-desktop .desktop-games-bottom-panel-esports a{
+    color: var(--clr-light-nav);
+}
+
+.change-esports-list-desktop .desktop-games-bottom-panel-esports .fa-trophy {
+    color: var(--clr-nav-items);
+    font-size: 16.5px;
+}
+
+
+.change-esports-list-desktop .desktop-collapse-esports .ow-league {
+    animation: moveBanner 0.09s ease-in;
+}
+.change-esports-list-desktop .desktop-collapse-esports .ow-wc {
+    animation: moveBanner 0.1s ease-in;
+}
+.change-esports-list-desktop .desktop-collapse-esports .hs-masters {
+    animation: moveBanner 0.15s ease-in;
+}
+.change-esports-list-desktop .desktop-collapse-esports .sc-2-wcs {
+    animation: moveBanner 0.2s ease-in;
+}
+.change-esports-list-desktop .desktop-collapse-esports .wow-arena {
+    animation: moveBanner 0.25s ease-in;
+}
+
+.line-wide {
+    height: 0.1px;
+    width: 100%;
+    background-color: #55565a9a;
+
+}
+
+
+.change-esports-list-desktop .arrow-down-esports {
+    transform: rotate(180deg);
+}
+.my-account-toggle .my-account-arrow {
+    font-size: 10px;
+}
+.change-account-list-desktop .my-account-toggle .my-account-arrow {
+    transform: rotate(180deg);
+}
+.change-account-list-desktop .desktop-collapse-account {
+    width: 330px;
+    background: linear-gradient(#2e3746, #1e2530);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 155px;
+    animation: moveDesktop 1s ease-in;
+    position: absolute;
+    right: 35px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid var(--clr-arrow-down);
+    box-shadow:0.25em 0.25em 0.75em rgba(0,0,0, 0.25) ;
+    z-index: 10000;
+}
+@media (min-width: 1750px) {
+    .change-account-list-desktop .desktop-collapse-account {
+        right: 130px;
+    }
+}
+.change-account-list-desktop .desktop-collapse-account button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 80%;
+    background-color: #006FB2;
+    border: 0.5px solid #2abcff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer; /* MAKE SURE TO ADD HREF FUNCTIONALITY */
+}
+
+.change-account-list-desktop .desktop-collapse-account button:hover {
+    background-color: #1087d1;
+    border: 0.5px solid #08a3eb;
+}
+.change-account-list-desktop .desktop-collapse-account .game {
+    display: flex;
+    position: relative;
+    margin: 7px 0px;
+    
+    margin-right: 135px;
+}
+
+.change-account-list-desktop .desktop-collapse-account .account-new {
+    margin-right: 163px;
+}
+
+
+.change-account-list-desktop .desktop-collapse-account .game a {
+     color: var(--clr-light-nav); 
+     font-size: 1.05rem;
+     
+}
+
+.change-account-list-desktop .desktop-collapse-account .game a:hover {
+    color: white;
+}
+.change-account-list-desktop .desktop-collapse-account .game a i{
+     color: var(--clr-nav-items);
+}
+
+
+}
+
+
+
+
+
+
+
+
+.change-esports-list-desktop .line-wide-moved {
+    position: absolute;
+    top: 350px;
+}
+
+
+
+.desktop-collapse-esports {
+    width: 100%;
+    background: #1c202bd3;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    animation: moveDesktop 1s ease-in;
+    position: a;
+    top: 300px;
+    display: none;
+    
+}
+.desktop-collapse-account {
+    
+    display: none;
+}
+/* ESPORTS COLLAPSIBLE MENU ON DESKTOP SIZE 
+END
+END
+*/

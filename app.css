@@ -1,0 +1,613 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+  --ff-primary: "Helvetica", sans-seriff;
+  --ff-secondary: "Source Code Pro", monospace;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-nav-side-bg: #151A23;
+  --clr-nav-items: #009AE4;
+  --clr-navigation: #0B0D12;
+  --clr-light-nav: #B6B7B8;
+  --clr-bg: #002650;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  --clr-nav: rgb(107, 208, 255) ;
+  --clr-arrow-down: #55565A;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0, 0.25), 
+  0.125em 0.125em 0;
+}
+
+
+
+
+
+body {
+    background-color: var(--clr-bg);
+    position: relative;
+    background-image: url(imgs/bgimg-placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* NAVBAR -DESKTOP SIZE */
+/* NAVBAR -DESKTOP SIZE */
+/* NAVBAR -DESKTOP SIZE */
+.sidebar {
+    display: none;
+}
+
+/* NAV CONTENTS */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-navigation);
+    padding: 0px 0;
+}
+.blizzard-logo {
+    height: 44px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    align-self: center;
+}
+
+.personal-log-in {
+    display: flex;
+    color: #009AE4;
+    align-items: center;
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+.line-mobile-collapse {
+    width: 100%;
+        height: 1px;
+        background-color: #303030;
+}
+
+.hamburger-menu {
+    margin-left: 10px;
+    display: flex;
+    color: #009AE4;
+    align-self: center;
+    transform: scale(1.3);
+}
+
+.mobile-extras {
+    margin-left: -13px;
+}
+.mobile-extras i {
+    margin-right: 7px;
+    color: var(--clr-nav-items);
+    height: 15px;
+}
+.menu a{
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  color: var(--clr-light-nav);
+  display: flex;
+  margin-right: 25px;
+  font-size: 18.2px;
+  letter-spacing: 0px;
+  
+}
+
+
+.games {
+  margin-left: 30px !important;
+}
+
+.menu-item-side .mobile-collapse-line {
+    height: 1px !important;
+    color: var(--clr-arrow-down) !important;
+}
+
+.log-in-full-width {
+    display: none;
+    
+}
+
+.fa-bars {
+    cursor: pointer;
+}
+
+.menu-item:nth-of-type(1) {
+    margin-left: 15px;
+}
+.mobile-sized-account-bar {
+    position: absolute;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        width: 65%;
+        background-color: var(--clr-nav-side-bg);
+        height: 100vh;
+        display:block;
+        animation: move2 0.3s ease !important;
+        display: none;
+    }
+
+/*END OF NAV CONTENTS */
+
+
+
+
+
+/* CONTENT FOR MOBILE SIZED SIDE NAV BARS AT ANYTHING UNDER 700PX */
+/* CONTENT FOR MOBILE SIZED SIDE NAV BARS AT ANYTHING UNDER 700PX */
+/* CONTENT FOR MOBILE SIZED SIDE NAV BARS AT ANYTHING UNDER 700PX */
+
+
+@media (max-width: 768px) {
+    .change {
+        overflow: hidden;
+        
+    } 
+    
+    .toggle-side-account {
+        overflow: hidden;
+    }
+    .nav-space {
+        cursor: pointer;
+    }
+    .toggle-side-account .mobile-sized-account-bar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 330px !important;
+        background-color: var(--clr-nav-side-bg);
+        height: 100vh;
+        display:block;
+        animation: move2 0.3s ease;
+        
+    }
+    .toggle-side-account .line {
+        margin: 10px 0px;
+        width: 100%;
+        height: 1px;
+        background-color: #303030;
+    }
+    .mobile-sized-account-bar .log-in-button-side {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-sized-account-bar .log-in-button-side button {
+        padding: 5px 0px;
+   background-color: #006FB2;
+    border: 0.5px solid #2abcff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    color: white !important;
+    width: 80%;
+    align-self: center;
+    position: relative;
+    margin: 10px 0px;
+    }
+
+    .mobile-sized-account-bar .log-in-button-side button:hover {
+        background-color:#0278c2;
+    }
+    .mobile-sized-account-bar .fa-times2 {
+        position: relative;
+        right: -85%;
+        color: var(--clr-nav-items);
+        font-size: 1.3em;
+        margin-top: 12px;
+       margin-bottom: 0px;
+       cursor: pointer;
+    }
+    .mobile-sized-account-bar a{
+        color: var(--clr-light-nav);
+        font-family: 'Open Sans', sans-serif;
+    }
+    .mobile-sized-account-bar i {
+        color: var(--clr-nav-items);
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+
+
+
+
+    .change .mobile-side-img {
+        width: 100%;
+        display: flex;
+    }
+    
+    .change .fa-times {
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        font-size: 22px;
+        color: var(--clr-nav-items);
+        cursor: pointer;
+    }
+    
+
+
+    .change .sidebar-logo {
+        height: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .change .mobile-size-side-bar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 80%;
+        max-width: 330px !important;
+        background-color: var(--clr-nav-side-bg);
+        height: 100vh;
+        display:block;
+        animation: move 0.3s ease;
+        
+    }
+
+    .change-games-list .mobile-size-side-bar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 80%;
+        background-color: var(--clr-nav-side-bg);
+        
+        display:block;
+        animation: move 0.3s ease;
+        
+        overflow: scroll;
+    }
+    .change-esports-list .mobile-size-side-bar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 80%;
+        background-color: var(--clr-nav-side-bg);
+        height: 100vh;
+        display:block;
+        animation: move 0.3s ease;
+        overflow: scroll;
+        
+    }
+
+    
+    /* Animation for .moblie-size-side-bar */
+    @keyframes move {
+        from { left: -100%;
+        }
+        to { left: 0%;
+        }
+    }
+    @keyframes move2 {
+        0% { right: -100%;}
+        100% { right: 0%;}
+    }
+    
+    
+    .mobile-size-side-bar {
+        position: absolute;
+        z-index: 1000;
+        width: 65%;
+        background-color: var(--clr-nav-side-bg);
+        height: 100vh;
+        display: none;
+        left: -100%;
+        animation: move 0.3s ease;
+    }
+    
+    .change .menu-item-side a {
+        padding: 15px;
+        color: #B6B7B8;
+        font-family: var(--ff-primary);
+        font-size: 15px;
+    }
+    
+    .change .account-side-bar {
+        display: flex;
+        flex-direction: column;
+    }
+    .change .account-side-bar .menu-item-side:nth-of-type(1){
+        padding-top: 30px;
+    }
+    .change .account-side-bar .menu-item-side {
+        padding: 16px 10px;
+    }
+    .arrow-down {
+        font-size: 9px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 2px;
+    }
+    .change-games-list .menu-link .arrow-down-games {
+        margin-left: 2px;
+        transform: rotate(180deg);
+    }
+    .change-esports-list .menu-link .arrow-down-esports {
+        margin-left: 2px;
+        transform: rotate(180deg);
+    }
+    
+    
+
+
+
+
+    
+    .change .line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #303030;
+    }
+   
+/* COLLAPSIBLE IN CHANGE GAMES */
+    .games-collapse {
+        color: var(--clr-light-nav);
+        background-color: #0F1218;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        
+    }
+
+
+    .change-games-list .games-collapse {
+        color: var(--clr-light-nav);
+        background-color: #0F1218;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: block;
+        overflow: hidden;
+        
+        
+    }
+    
+    .change-games-list  .game {
+        padding-left: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .change-games-list .games-collapse img {
+        height: 20px;
+    }
+
+
+    .esports-collapse {
+        color: var(--clr-light-nav);
+        background-color: #0F1218;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        
+    }
+
+
+    .change-esports-list .esports-collapse {
+        color: var(--clr-light-nav);
+        background-color: #0F1218;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: block;
+        overflow: hidden;
+        
+        
+    }
+    .game i {
+        color: var(--clr-nav-items);
+    }
+    .change-esports-list .game {
+        padding-left: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .change-esports-list .esports-collapse img {
+        height: 20px;
+    }
+
+
+
+    @keyframes collapseGames {
+        0% { left: -100%;}
+        100% { left: 0%;}
+    }
+
+
+
+
+}
+
+
+
+@media (min-width: 765px) {
+    
+     .arrow-down {
+         align-self: center;
+         font-size: 13px;
+         margin-left: 2px;
+         color: var(--clr-arrow-down) ;
+     }
+    
+    .menu-item a{
+        color: var(--clr-light-nav);
+        font-family: var(--ff-primary);
+        
+    }
+
+    .menu-item a:hover {
+         color: white;
+    }
+
+    .log-in-full-width .menu-item a{
+        font-size: 13px;
+    }
+    .log-in-full-width .menu-item a:nth-of-type(1){
+        margin-right: 20px;
+    }
+    .nav-space {
+        display: none;
+    }
+
+     .log-in-full-width {
+         display: flex;
+         
+     }
+    
+
+   
+    .blizzard-logo {
+        margin-left: 32px;
+    }
+    .logo-nav-links {
+         display: flex;
+    }
+    .nav-bar {
+        display: flex;
+        background-color: var(--clr-navigation);
+        padding: 7px 0;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* END -------------- CONTENT FOR MOBILE SIZED SIDE NAV BARS AT ANYTHING UNDER 700PX ENDS HERE ---------*/
+
+
+/* ADJUSTEMENTS FOR TOP NAV BAR AT DESKTOP SIZE */ 
+@media (min-width:1600px) {
+    .logo-nav-links {
+        margin-left: 33px;
+    }
+    .personal-log-in {
+        margin-right: 33px;
+    }
+}
+@media (min-width:1650px) {
+    .logo-nav-links {
+        margin-left: 46px;
+    }
+    .personal-log-in {
+        margin-right: 46px;
+    }
+}
+
+@media (min-width:1700px) {
+    .logo-nav-links {
+        margin-left: 59px;
+    }
+    .personal-log-in {
+        margin-right: 59px;
+    }
+}
+
+@media (min-width:1750px) {
+    .logo-nav-links {
+        margin-left: 72px;
+    }
+    .personal-log-in {
+        margin-right: 72px;
+    }
+}
+@media (min-width:1800px) {
+    .logo-nav-links {
+        margin-left: 85px;
+    }
+    .personal-log-in {
+        margin-right: 85px;
+    }
+}
+@media (min-width:1850px) {
+    .logo-nav-links {
+        margin-left: 98px;
+    }
+    .personal-log-in {
+        margin-right: 98px;
+    }
+}
+@media (min-width:1900px) {
+    .logo-nav-links {
+        margin-left: 150px;
+    }
+    .personal-log-in {
+        margin-right: 150px;
+    }
+}
+/* -------------------ADJUSTEMENTS FOR TOP NAV BAR AT DESKTOP SIZE -------------------- END*/ 
+
+
+/* REMEMBER TO ADD THAT WHEN YOU CLICK OFF THE ELEMENT, THE SIDE-NAV WILL DISSAPEAR */
+
+/*ADD AN ANIMATION TO THE NAV BAR */
+
+/* MAKE SURE TO CHANG WIDTH OF THE SIDE NAV FROM % TO PX */
+.mobile-size-side-bar {
+    display: none;
+}
+
+
+
+.change-games-list .games-collapse {
+    color: var(--clr-light-nav);
+    background-color: #0F1218;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.change-games-list  .game {
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    
+}
+.change-games-list .games-collapse img {
+    height: 20px;
+}
+
